@@ -20,6 +20,7 @@ module.exports = {
     'global-require': 'off',
     'import/no-dynamic-require': 'off',
     'import/prefer-default-export': 'off',
+    'linebreak-style': 'off',
     radix: 'off',
     'import/no-extraneous-dependencies': [
       'error',
