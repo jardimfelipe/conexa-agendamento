@@ -1,6 +1,6 @@
 import { shallowMount, createLocalVue } from '@vue/test-utils';
-import LogoutButton from './logout-button.vue';
 import Vuex from 'vuex';
+import LogoutButton from './logout-button.vue';
 
 const localVue = createLocalVue();
 
@@ -20,7 +20,7 @@ describe('@views/login', () => {
               }
               return false;
             },
-            logOut(_) {
+            logOut() {
               return true;
             },
           },

@@ -8,6 +8,12 @@ localVue.use(Vuex);
 
 describe('@views/login', () => {
   let store;
+  const FormStub = {
+    render: () => {},
+    methods: {
+      validate: () => true,
+    },
+  };
   beforeEach(() => {
     store = new Vuex.Store({
       modules: {
@@ -29,6 +35,9 @@ describe('@views/login', () => {
     const wrapper = shallowMount(Login, {
       localVue,
       store,
+      stubs: {
+        'v-form': FormStub,
+      },
       data() {
         return {
           model: {

@@ -22,23 +22,3 @@ export const Login = async (credentials) => {
     return e.response.data;
   }
 };
-
-export const Logiasn = async (credentials) => {
-  try {
-    const { email, password } = credentials;
-    if (email === undefined) {
-      return Promise.reject(new Error('Missing required  parameter: email'));
-    }
-    if (password === undefined) {
-      return Promise.reject(new Error('Missing required  parameter: password'));
-    }
-    return await apiInstance({
-      method: 'post',
-      url: `${baseUrl}/login`,
-      data: credentials,
-    });
-  } catch (e) {
-    console.error(e);
-    return e.response.data;
-  }
-};
