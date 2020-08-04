@@ -1,25 +1,38 @@
-Descrição:
-Precisamos construir um front onde nossos médicos de plantão consigam agendar atendimentos para os pacientes e listar os atendimentos agendados.
+# conexa agendamento
+A application to create and consult medical appointments.
+This project was developed using [VueJS](https://vuejs.org/) (with Vue Router, Vuex), [Vuetify](https://vuetifyjs.com/en/) as UI framework, [Jest](https://jestjs.io/) to run unit tests and [Cypress](https://www.cypress.io/) to run e2e tests.
 
-Será necessário ter uma tela de login para que médicos da clínica Conexa Saúde consigam acessar a aplicação, utilizando email e senha (Podem realizar o login com qualquer usuário de teste).
-O response do login será um token de validação e o nome do médico.
+## Clone project
+```
+git clone https://github.com/jardimfelipe/conexa-agendamento.git
+```
 
-O médico poderá cadastrar, listar e detalhar uma consulta.
+## Change to project's directory
+```
+cd ./conexa-agendamento
+```
 
-Link da API: http://desafio.conexasaude.com.br/swagger-ui.html#/desafio-rest
+### Project setup
+```
+yarn install
+```
 
-Requisitos:
+### Run it
+```
+yarn dev --open
+```
 
-* Desenvolver uma aplicação usando Vue JS;
-* Clonar este repositório, criar uma nova branch e abrir um merge request para master;
+### Run unit tests with Jest
+```
+yarn test:unit
+```
 
-Serão avaliados os seguintes itens:
+### Run end-to-end tests with Cypress
+```
+yarn test:e2e
+```
 
-* Clareza do código;
-* Estrutura criada para a aplicação;
-* Se os requisitos descritos acima foram atendidos;
-* Se possui descrição clara de como montar o ambiente local e realizar os testes (se houverem);
-
-Em caso de dúvidas sobre o desafio, entre em contato.
-
-Lembre-se que uma boa aplicação é bem testada.
+### Run eslint 
+```
+yarn lint
+```
