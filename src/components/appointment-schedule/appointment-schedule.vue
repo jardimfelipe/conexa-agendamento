@@ -45,7 +45,6 @@ export default {
       this.calendarDate = '';
     },
     prevMonth() {
-      this.$swal('success');
       this.$refs.calendar.prev();
     },
     nextMonth() {

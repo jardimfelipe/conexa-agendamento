@@ -9,7 +9,6 @@ module.exports = {
     parser: 'babel-eslint',
   },
   rules: {
-    'prettier/prettier': 'error',
     'no-unused-vars': 'warn',
     'no-console': 'off',
     'func-names': 'off',
