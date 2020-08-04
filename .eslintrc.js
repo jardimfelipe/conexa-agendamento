@@ -18,6 +18,9 @@ module.exports = {
     'class-methods-use-this': 'off',
     'no-shadow': 'off',
     'object-curly-newline': 'off',
+    'global-require': 'off',
+    'import/no-dynamic-require': 'off',
+    'import/prefer-default-export': 'off',
     radix: 'off',
     'import/no-extraneous-dependencies': [
       'error',
